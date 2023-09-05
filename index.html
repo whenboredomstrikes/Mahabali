@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mahabali</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="res.css">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
         <img class="bg" src="assets/big-bg.webp" alt="">
         <img class="maha" src="assets/mahabali.webp" alt="">
 
-        <img class="text" src="assets/big-text.webp" alt="" srcset="">
+        <img class="logo" src="assets/big-text.webp" alt="" srcset="">
 
         <p class="t1">Mahabali (IAST: Mahābalī), also known as Bali, Indrasenan, or Māveli, is a daitya king featured in
             Hinduism. He is the grandson of Prahlada, and a descendant of the sage Kashyapa.
@@ -52,8 +52,25 @@
         </div>
     </div>
 
-    <section>
+    <section class="about">
+        <img class="d1" src="assets/border-3.webp" alt="">
+        <b class="m tt">MAHABALI</b>
+        <br>
+        <div>
+            <b class="k tt">THE KING 
+                <img src="assets/crown.webp" alt="">
+            </b>
+        </div>
+        <p class="b tt">WHO GOT BANISHED</p>
+        <div class="n ">
+            <p class="ne">TO THE <b>NETHERWORLD</b>
+                <img src="assets/portal.webp" alt="">
+            </p>
+        </div>
+    </section>
 
+    <section>
+        
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -84,9 +101,19 @@
         currentScroll = window.pageYOffset
     });
 
-
-
-
+    ScrollTrigger.create({
+        animation: gsap.from(".logo", {
+            y: "50vh",
+            scale: 7.3,
+            yPercent: -50,
+        }),
+        scrub: true,
+        trigger: ".hero",
+        start: "top top",
+        endTrigger: ".marquee",
+        end: "bottom top",
+    })
+	
     const lenis = new Lenis()
 
     lenis.on('scroll', (e) => {
