@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'clash';
+    src: url(/font/ClashDisplay-Variable.ttf);
+}
+
+body {
+    color: #fff;
+    background-color: #FFCC2B;
+    font-family: 'clash';
+}
+
+section {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero img {
+    position: absolute;
+}
+
+.hero .b-1 {
+    z-index: 1;
+    top: -9.5rem;
+    left: -9.5rem;
+    height: 20rem;
+    rotate: -90deg;
+    animation: r1 40s linear infinite;
+}
+
+.hero .b-2 {
+    z-index: 1;
+    top: -9.5rem;
+    right: -9.5rem;
+    height: 20rem;
+    animation: r2 40s linear infinite;
+}
+
+.hero .bg {
+    top: 85%;
+    left: 50%;
+    z-index: 0;
+    transform: translate(-50%, 0%);
+    animation: r3 40s linear infinite;
+}
+
+.hero .maha {
+    height: 95%;
+    z-index: 2;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.hero .text {
+    width: 95%;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero .t1 {
+    position: absolute;
+    top: 62%;
+    left: 2.7rem;
+    width: 30%;
+    z-index: 3;
+}
+
+.hero .t2 {
+    position: absolute;
+    top: 30%;
+    right: 2.7rem;
+    width: 30%;
+    z-index: 3;
+    text-align: right;
+}
+
+@keyframes r1 {
+    0% {
+        transform: rotate(-90deg);
+    }
+
+    100% {
+        transform: rotate(270deg);
+    }
+}
+
+@keyframes r2 {
+    0% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(-270deg);
+    }
+}
+
+@keyframes r3 {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* .marquee {
+    height: 10rem;
+    background-color: aquamarine;
+}
+
+.marquee img {
+    height: 4rem;
+}
+
+.marquee b {
+    background-color: bisque;
+    font-size: 3rem;
+    color: #fff;
+    font-family: 'clash';
+    animation: marquee 10s linear infinite;
+}
+
+.marquee .right {
+    display: flex;
+    align-items: center;
+} */
+
+.marquee__part {
+    flex-shrink: 0;
+    padding: 0 4px;
+    font-smooth: always;
+  }
+  
+  .marquee {
+    background: #3B7FFF;
+    color: #EEE;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.667vw;
+    padding: 32px 0;
+  
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .marquee__inner {
+    -webkit-font-smoothing: antialiased;
+      width: fit-content;
+      display: flex;
+      flex: auto;
+      flex-direction: row;
+  }

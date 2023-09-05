@@ -1,0 +1,96 @@
+@media (width < 820px) {
+    .hero .b-1 {
+        top: -7rem;
+        left: -7rem;
+        height: 15rem;
+    }
+
+    .hero .b-2 {
+        top: -7rem;
+        right: -7rem;
+        height: 15rem;
+    }
+
+    .hero .bg {
+        top: 85%;
+        left: 50%;
+    }
+
+    .hero .maha {
+        height: 60%;
+    }
+
+    .hero .t1 {
+        font-size: .6rem;
+        left: .7rem;
+        top: 55%;
+        width: 25%;
+    }
+
+    .hero .t2 {
+        font-size: .6rem;
+        top: 33%;
+        right: .7rem;
+    }
+}
+
+@media (width<968px) {
+    .hero .maha {
+        height: 70%;
+    }
+
+    .hero .t1 {
+        left: 1.5rem;
+        top: 55%;
+        width: 25%;
+    }
+
+    .hero .t2 {
+        top: 35%;
+        right: 1.5rem;
+    }
+}
+
+
+@media (width<420px) {
+    .hero .maha {
+        height: 70%;
+    }
+
+    .hero .t1 {
+        left: .8rem;
+    }
+
+    .hero .t2 {
+        right: .8rem;
+    }
+}
+
+@media (width<320px) {
+    .hero .maha {
+        height: 60%;
+    }
+
+    .hero .t1 {
+        left: .6rem;
+        font-size: .5rem;
+    }
+
+    .hero .t2 {
+        right: .6rem;
+        font-size: .5rem;
+        top: 33%;
+    }
+
+    .hero .b-1 {
+        top: -6rem;
+        left: -6rem;
+        height: 12rem;
+    }
+
+    .hero .b-2 {
+        top: -6rem;
+        right: -6rem;
+        height: 12rem;
+    }
+}
