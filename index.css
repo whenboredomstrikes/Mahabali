@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'clash';
-    src: url(/font/ClashDisplay-Variable.ttf);
+    src: url(font/ClashDisplay-Variable.ttf);
 }
 
 body {
@@ -117,50 +117,37 @@ section {
     }
 }
 
-/* .marquee {
-    height: 10rem;
-    background-color: aquamarine;
-}
-
-.marquee img {
-    height: 4rem;
-}
-
-.marquee b {
-    background-color: bisque;
-    font-size: 3rem;
-    color: #fff;
-    font-family: 'clash';
-    animation: marquee 10s linear infinite;
-}
-
-.marquee .right {
-    display: flex;
-    align-items: center;
-} */
-
 .marquee__part {
+    display: flex;
+    gap: 2rem;
     flex-shrink: 0;
     padding: 0 4px;
-    font-smooth: always;
-  }
-  
-  .marquee {
-    background: #3B7FFF;
-    color: #EEE;
+    align-items: center;
+}
+
+.marquee {
+    background: #fff;
+    color: #FFCC2B;
     text-transform: uppercase;
-    font-weight: 600;
-    font-size: 1.667vw;
-    padding: 32px 0;
-  
+    font-weight: 900;
+    font-size: 4rem;
+    padding: 1rem 0;
+    letter-spacing: 3px;
     position: relative;
     overflow: hidden;
-  }
-  
-  .marquee__inner {
-    -webkit-font-smoothing: antialiased;
-      width: fit-content;
-      display: flex;
-      flex: auto;
-      flex-direction: row;
-  }
+}
+
+.marquee__part .line {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: #FFCC2B;
+    -webkit-text-stroke-width: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 900;
+}
+
+.marquee__inner {
+    width: fit-content;
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+}
