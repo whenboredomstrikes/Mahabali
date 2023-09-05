@@ -154,3 +154,35 @@
         right: 1rem;
     }
 }
+
+
+@media(width<=820px) {
+
+    .detail {
+        height: fit-content;
+        padding: .5rem;
+    }
+
+    .details {
+        flex-direction: column;
+        padding: 0rem;
+    }
+
+    .lord .v1 {
+        width: 100%;
+    }
+
+    .details .content .v2 {
+        height: 13rem;
+        width: 100%;
+    }
+
+    .details .content p {
+        font-size: .8rem;
+        letter-spacing: 1px;
+    }
+
+    .lord b {
+        font-size: 1.5rem;
+    }
+}

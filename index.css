@@ -213,3 +213,42 @@ section {
     right: 4rem;
     z-index: -1;
 }
+
+.details {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.details .content .v2 {
+    float: left;
+    margin: 1rem;
+    margin-left: 0;
+}
+
+.details .content p {
+    letter-spacing: 2px;
+    text-align: justify;
+}
+
+.lord {
+    text-align: center;
+}
+
+.lord b {
+    font-size: 2.1rem;
+}
+
+footer{
+    text-align: center;
+    padding: 1rem;
+    color: #000;
+    font-weight: 600;
+}
+
+footer a{
+    text-decoration: none;
+    font-weight: 800;
+}
