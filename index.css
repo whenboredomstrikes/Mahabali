@@ -230,6 +230,7 @@ section {
 
 .details .content p {
     letter-spacing: 2px;
+    font-size: 1.1rem;
     text-align: justify;
 }
 
