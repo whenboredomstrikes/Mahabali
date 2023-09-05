@@ -7,6 +7,8 @@
     <title>Mahabali</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="res.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -54,15 +56,15 @@
 
     <section class="about">
         <img class="d1" src="assets/border-3.webp" alt="">
-        <b class="m tt">MAHABALI</b>
+        <b data-aos="zoom-out-right" class="m tt">MAHABALI</b>
         <br>
         <div>
-            <b class="k tt">THE KING
+            <b data-aos="zoom-out-left" class="k tt">THE KING
                 <img src="assets/crown.webp" alt="">
             </b>
         </div>
-        <p class="b tt">WHO GOT BANISHED</p>
-        <div class="n ">
+        <p data-aos="zoom-out-right" class="b tt">WHO GOT BANISHED</p>
+        <div data-aos="zoom-out-left" class="n ">
             <p class="ne">TO THE <b>NETHERWORLD</b>
                 <img src="assets/portal.webp" alt="">
             </p>
@@ -110,6 +112,7 @@
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
 </body>
 <script>
+    AOS.init();
 
     let currentScroll = 0;
     let isScrollingDown = true;
