@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
 }
 
 @font-face {
@@ -201,7 +208,6 @@ section {
 
 .about .n {
     position: relative;
-    /* bottom: -4rem; */
     font-size: 6rem;
     font-weight: 900;
 }
@@ -219,7 +225,7 @@ section {
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 1rem;
+    padding: 2.5rem;
 }
 
 .details .content .v2 {
@@ -242,14 +248,44 @@ section {
     font-size: 2.1rem;
 }
 
-footer{
+footer {
     text-align: center;
     padding: 1rem;
     color: #000;
     font-weight: 600;
 }
 
-footer a{
+footer a {
     text-decoration: none;
     font-weight: 800;
+}
+
+.fest{
+    padding: 2.5rem;
+    height: fit-content;
+}
+
+.fest .rope {
+    display: flex;
+}
+
+.fest img{
+    width: 50%;
+    height: 20rem;
+}
+
+.small {
+    padding: 2.5rem;
+    font-size: 4rem;
+    letter-spacing: 2.5px;
+}
+
+.humble {
+    font-family: 'Comforter Brush', cursive;
+    font-weight: 500;
+}
+
+.last img{
+    width: 100%;
+    padding: 2.5rem ;
 }

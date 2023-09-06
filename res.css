@@ -185,4 +185,26 @@
     .lord b {
         font-size: 1.5rem;
     }
+
+    .fest{
+        padding: .5rem;
+    }
+    
+    .fest img{
+        height: 10rem;
+    }
+
+    .small {
+        padding: 1rem .5rem;
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    .last {
+        height: fit-content;
+    }
+
+    .last img {
+        padding: .5rem;
+    }
 }
